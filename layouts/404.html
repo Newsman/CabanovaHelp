@@ -1,0 +1,6 @@
+{{ define "main" }}
+<section class="hero"><div class="wrap narrow"><p class="eyebrow">404</p><h1>Pagina nu există</h1>{{ partial "search.html" . }}</div></section>
+<section class="wrap narrow sec"><p class="lead">Caută mai sus sau întoarce-te la <a href="{{ site.Home.RelPermalink }}">pagina principală a centrului de ajutor</a>.</p></section>
+{{ $old := slice }}{{ range (site.GetPage "/editorul-vechi").RegularPages }}{{ $old = $old | append .File.ContentBaseName }}{{ end }}
+<script>(function(){var m=location.pathname.match(/\/([\w-]+)\.html$/),o={{ $old }};if(m&&o.indexOf(m[1])>=0)location.replace({{ (site.GetPage "/editorul-vechi").RelPermalink }}+m[1]+'/')})();</script>
+{{ end }}

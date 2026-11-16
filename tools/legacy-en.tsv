@@ -1,0 +1,85 @@
+# Articole help.cabanova.com (editorul vechi): nivel, slug, titlu
+1	create-a-website	Create a website
+2	edit-template	Edit Template
+3	width-and-hight	Width and Hight
+3	template-library	Template Library
+3	predefined-pages	Predefined Pages
+3	favicon	Favicon
+2	edit-my-pages	Edit my pages
+3	link-your-pages	Link your pages
+3	rename-your-pages	Rename your pages
+3	change-the-url-of-the-page	Change the URL of the page
+3	hide-your-page-in-navigation	Hide your page in navigation
+3	duplicate-your-page-s	Duplicate your page/s
+3	move-your-page	Move your page
+3	search-for-a-page-in-your-site	Search for a page in your site
+2	insert-elements	Insert Elements
+3	generic-elements	Generic Elements
+3	media-elements	Media Elements
+3	social-media-elements	Social Media Elements
+3	forms	Forms
+3	shape-elements	Shape Elements
+3	poll	Poll
+3	guestbook	Guestbook
+3	counter	Counter
+3	navigation	Navigation
+3	map	Map
+3	custom-html	Custom HTML
+3	external-content	External Content
+3	search	Search
+3	shop	Shop
+2	edit-elements	Edit Elements
+3	copy	Copy
+3	paste	Paste
+3	delete	Delete
+3	paste-in-place	Paste in place
+3	size-and-position	Size and position
+3	undo-redo	Undo, Redo
+3	order	Order
+3	select-deselect-duplicate	Select, Deselect, Duplicate
+2	page-edit-options	Page Edit Options
+3	page-background	Page Background
+3	page-html	Page HTML
+3	hide-page-hide-navigation	Hide page, Hide navigation
+3	page-password	Page password
+2	link-elements	Link Elements
+3	external-link	External Link
+3	link-to-page-within-this-site	Link to page within this site
+3	email-link	Email Link
+3	download-link	Download Link
+3	action-link	Action Link
+1	manage-my-website	Manage my website
+2	manage-files	Manage Files
+2	seo-tools	SEO Tools
+3	page-images	Page Images
+3	google-tools	Google Tools
+3	robots	Robots
+2	view-my-website	View my website
+3	enter-full-screen-grid	Enter full screen, Grid
+1	website-mobile-version	Website Mobile Version
+2	add-remove-element	Add/Remove element
+2	move-up-down-element	Move up/down element
+2	set-padding	Set Padding
+2	float-element	Float element
+2	set-as-background-element	Set as background element
+2	edit-title-and-navigation-style	Edit title and navigation style
+1	domains-and-emails	Domains and emails
+2	available-domains	Available Domains
+2	primary-domain	Primary Domain
+2	internationalized-domains	Internationalized Domains
+2	transfering-domains-to-cabanova	Transfering Domains to Cabanova
+2	emails	Emails
+3	set-up-in-outlook-2003	Set up in Outlook 2003
+3	set-up-in-outlook-2007	Set up in Outlook 2007
+3	set-up-in-email-client	Set up in email client
+1	seo	SEO
+2	seo-basics	SEO Basics
+2	seo-improving-structure	SEO Improving Structure
+2	seo-optimizing-content	SEO Optimizing Content
+2	seo-dealing-with-crawlers	SEO Dealing with crawlers
+2	seo-promotion-and-analysis	SEO Promotion and analysis
+1	faqs	FAQs
+2	tips-tricks	Tips & Tricks
+2	problem-with-online-changes	Problem with online changes
+2	problem-with-sending-email	Problem with sending email
+2	problem-with-receiving-forms	Problem with receiving forms

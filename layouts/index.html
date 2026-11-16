@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "hero.html" . }}
+<section class="wrap narrow sec">
+  <div class="grid">{{ range .Sections.ByWeight }}{{ $n := len .RegularPages }}
+    <a class="card{{ if .Params.legacy }} card-old{{ end }}" href="{{ .RelPermalink }}"><span class="card-ico">{{ partial "icon.html" .Params.icon }}</span><span class="card-t">{{ .Title }}</span><span class="card-d">{{ .Description }}</span><span class="card-n">{{ if $n }}{{ i18n "articles" $n }}{{ else }}{{ i18n "soon_short" }}{{ end }}</span></a>{{ end }}
+  </div>
+  {{ $pop := where (where site.RegularPages "Params.legacy" "!=" true) "Section" "!=" "" }}
+  {{ with first 6 $pop.ByWeight }}<h2 class="h2">{{ i18n "popular" }}</h2><ul class="list">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span>{{ .CurrentSection.Title }}</span></li>{{ end }}</ul>{{ end }}
+  {{ partial "cta.html" . }}
+</section>
+{{ end }}

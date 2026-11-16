@@ -1,0 +1,6 @@
+{{- $u := .Destination -}}
+{{- if and (not (strings.Contains $u ":")) (not (strings.HasPrefix $u "#")) (not (strings.Contains $u "/")) -}}
+  {{- with .Page.CurrentSection.GetPage $u }}{{ $u = .RelPermalink }}{{ else }}{{ errorf "Link inexistent %q în %s" $u $.Page.File.Path }}{{ end -}}
+{{- end -}}
+<a href="{{ $u }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $u "http" }} rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /**/ -}}

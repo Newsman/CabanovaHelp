@@ -1,0 +1,5 @@
+{{ $m := printf "%s/%s" site.Params.main site.Language.Lang }}
+<footer class="ft"><div class="wrap ft-in">
+  <div class="ft-l"><span class="logo-img logo-w"></span><span>© 2001–{{ now.Year }} Cabanova. {{ i18n "rights" }}<br>Cabanova Software SRL · RO23957946</span></div>
+  <nav class="ft-nav"><a href="{{ $m }}/contact">{{ i18n "contact" }}</a><a href="{{ $m }}/termeni">{{ i18n "terms" }}</a><a href="{{ $m }}/politica-de-confidentialitate">{{ i18n "privacy" }}</a></nav>
+</div></footer>

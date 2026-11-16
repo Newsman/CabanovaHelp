@@ -1,0 +1,23 @@
+baseURL = "https://help.cabanova.com/"
+title = "Ajutor Cabanova"
+defaultContentLanguage = "ro"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  # Site-ul principal (la lansare: https://www.cabanova.com)
+  main = "https://cabnew26.cabanova.com"
+  account = "https://www.cabanova.com/p/ro/conecteaza-te.html"
+
+[languages.ro]
+  label = "Română"
+  weight = 1
+  contentDir = "content/ro"
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]

@@ -1,0 +1,5 @@
+<section class="hero"><div class="wrap narrow">
+  <p class="eyebrow">{{ if .IsHome }}{{ i18n "eyebrow" }}{{ else }}<a href="{{ site.Home.RelPermalink }}">{{ i18n "help" }}</a>{{ if .IsPage }} › <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>{{ end }}{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ partial "search.html" . }}
+</div></section>

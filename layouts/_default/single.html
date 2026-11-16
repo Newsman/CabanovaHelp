@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "hero.html" . }}
+<section class="wrap narrow sec">
+  <article class="art" data-pagefind-body data-pagefind-meta="cat:{{ if .Params.legacy }}{{ i18n "legacy_badge" }}{{ else }}{{ .CurrentSection.Title }}{{ end }}"{{ if .Params.legacy }} lang="en"{{ end }}>
+    {{ if .Params.legacy }}<span hidden data-pagefind-meta="legacy:1"></span>{{ end }}
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    {{ .Content }}
+  </article>
+  <div class="fb" data-pagefind-ignore><span>{{ i18n "useful" }}</span><button type="button" data-v="1">👍 {{ i18n "yes" }}</button><button type="button" data-v="0">👎 {{ i18n "no" }}</button><em hidden>{{ i18n "thanks" }}</em></div>
+  {{ $others := where .CurrentSection.RegularPages "Permalink" "!=" .Permalink }}
+  {{ with first 5 $others.ByWeight }}<div class="also" data-pagefind-ignore><p class="also-t">{{ i18n "also" }}</p><ul class="list">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul></div>{{ end }}
+  {{ partial "cta.html" . }}
+</section>
+{{ end }}

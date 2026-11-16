@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ i18n "help" }} | Cabanova{{ else }}{{ .Title }} | {{ i18n "help" }} Cabanova{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 155 }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "img/favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="preload" href="{{ "fonts/figtree-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/plus-jakarta-sans-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{ with resources.Get "help.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">{{ end }}
+<meta property="og:title" content="{{ .Title }}"><meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}"><meta property="og:url" content="{{ .Permalink }}">
+</head>
+<body class="{{ if .IsHome }}is-home{{ else if .IsPage }}is-article{{ else }}is-list{{ end }}">
+{{ partial "header.html" . }}
+<main>{{ block "main" . }}{{ end }}</main>
+{{ partial "footer.html" . }}
+<script>window.CB_HELP={base:{{ "" | relURL }},t:{noresult:{{ i18n "noresult" }},legacy:{{ i18n "legacy_badge" }},searching:{{ i18n "searching" }}}};</script>
+{{ with resources.Get "help.js" | minify | fingerprint }}<script src="{{ .RelPermalink }}" defer></script>{{ end }}
+</body>
+</html>

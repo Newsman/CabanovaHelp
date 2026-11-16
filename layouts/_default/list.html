@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "hero.html" . }}
+<section class="wrap narrow sec">
+  {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  {{ if .Params.legacy }}
+    <p class="tip">{{ i18n "legacy_note" }}</p>
+    {{ range .RegularPages.ByWeight.GroupByParam "group" }}<h2 class="h2">{{ .Key }}</h2><ul class="list cols">{{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ end }}
+  {{ else }}
+    {{ with .RegularPages.ByWeight }}<ul class="list list-d">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span>{{ .Description }}</span></li>{{ end }}</ul>{{ else }}<p class="soon">{{ i18n "soon" }}</p>{{ end }}
+  {{ end }}
+  {{ partial "cta.html" . }}
+</section>
+{{ end }}
