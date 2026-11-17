@@ -22,6 +22,8 @@ terms = "Termeni și condiții"
 privacy = "Politica de confidențialitate"
 contact = "Contact"
 rights = "Toate drepturile rezervate."
+tagline = "Website builder cu AI, magazine online, domenii și email pentru afaceri, din 2001."
+partner = "Partener email marketing:"
 [articles]
 one = "{{ .Count }} articol"
 other = "{{ .Count }} articole"

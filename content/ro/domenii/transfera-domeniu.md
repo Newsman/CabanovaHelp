@@ -1,7 +1,7 @@
 ---
 title: "Cum îți transferi domeniul la Cabanova"
 description: "Ai deja un domeniu cumpărat în altă parte? Îl poți muta la Cabanova ca să administrezi site-ul, domeniul și emailul dintr-un singur cont."
-weight: 2
+weight: 3
 ---
 Transferul mută administrarea domeniului de la firma actuală la Cabanova. Site-ul și emailul tău nu se schimbă doar prin transfer.
 

@@ -1,7 +1,7 @@
 ---
 title: "Ce înseamnă propagarea DNS și de ce durează"
 description: "De ce un domeniu nou sau o modificare de DNS nu se vede imediat peste tot și cât trebuie să aștepți."
-weight: 3
+weight: 6
 ---
 Când cumperi un domeniu, îl conectezi la site sau schimbi setările lui, informația nouă trebuie să ajungă la serverele DNS din toată lumea. Acest proces se numește **propagare DNS**.
 
