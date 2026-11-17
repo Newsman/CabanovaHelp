@@ -7,6 +7,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
   # Site-ul principal (la lansare: https://www.cabanova.com)
+  # până la lansare: site-ul nu apare în Google (la lansare: noindex = false)
+  noindex = true
   main = "https://cabnew26.cabanova.com"
   account = "https://www.cabanova.com/p/ro/conecteaza-te.html"
 
