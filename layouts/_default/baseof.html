@@ -6,7 +6,7 @@
 <title>{{ if .IsHome }}{{ i18n "help" }} | Cabanova{{ else }}{{ .Title }} | {{ i18n "help" }} Cabanova{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 155 }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<link rel="icon" href="{{ "img/favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any"><link rel="icon" href="{{ "img/favicon-48.png" | relURL }}" type="image/png"><link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}">
 <link rel="preload" href="{{ "fonts/figtree-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "fonts/plus-jakarta-sans-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 {{ with resources.Get "help.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">{{ end }}

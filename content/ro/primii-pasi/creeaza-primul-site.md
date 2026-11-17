@@ -11,7 +11,7 @@ Mergi pe cabanova.com și apasă **Contul meu**. Dacă nu ai încă un cont, îl
 
 ## 2. Alege un șablon
 
-Alege un șablon apropiat de domeniul tău (restaurant, servicii, magazin, portofoliu). Poți schimba ulterior culorile, fonturile și orice element, deci nu trebuie să fie perfect de la început.
+Alege un șablon apropiat de domeniul tău sau lasă AI-ul să-ți [creeze site-ul](site-cu-ai). Dacă alegi un șablon, caută unul apropiat de domeniul tău (restaurant, servicii, magazin, portofoliu). Poți schimba ulterior culorile, fonturile și orice element, deci nu trebuie să fie perfect de la început.
 
 > Sfat: alege șablonul după structură (câte secțiuni are, unde sunt pozele), nu după culori. Culorile se schimbă în câteva secunde.
 

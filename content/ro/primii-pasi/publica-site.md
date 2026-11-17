@@ -1,7 +1,7 @@
 ---
 title: "Cum publici site-ul și cum vezi modificările online"
 description: "Ce face butonul Publică, cât durează până apar modificările și ce faci dacă nu le vezi."
-weight: 2
+weight: 3
 ---
 Modificările din editor se salvează pe parcurs, dar vizitatorii le văd abia după ce publici site-ul.
 

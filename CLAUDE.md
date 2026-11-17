@@ -10,3 +10,7 @@ Centrul de ajutor Cabanova (help.cabanova.com): Hugo + Pagefind, publicat automa
 - Toate URL-urile prin `relURL`/`RelPermalink` (site-ul poate rula într-un subfolder pe GitHub Pages).
 - Test local: `hugo --minify -b http://localhost:8099/ -d /tmp/hp && npx pagefind --site /tmp/hp`, apoi Playwright (Chrome desktop + mobil). Capturi doar când contează aspectul.
 - Commit-uri cu autorul utilizatorului (Florian Cosmin Mircea).
+
+## Lansare pe help.cabanova.com
+
+Decizie (Cătălin): la lansare, serverul Cabanova face **reverse proxy** de pe `help.cabanova.com` către GitHub Pages (`newsman.github.io/CabanovaHelp/`); DNS-ul rămâne la Cabanova, nu se pune CNAME spre GitHub. Atunci: în `pages.yml` se construiește cu `--baseURL https://help.cabanova.com/` (nu cu URL-ul de Pages), proxy-ul mapează `/` → `/CabanovaHelp/` și trebuie să transmită și răspunsurile 404 (redirecturile vechilor `/<slug>.html` sunt în 404.html). `params.main` devine `https://www.cabanova.com`.

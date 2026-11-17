@@ -22,4 +22,4 @@ Associating several domains with one Website is generally recommended for **SEO*
 
 If you have just one single domain registered, no worry! You can still optimize your Website for Search Engines.
 
-Follow [**this link**](../seo/) to find out how.
+Follow [**this link**](../../seo-statistici/) to find out how.
