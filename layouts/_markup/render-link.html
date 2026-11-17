@@ -1,4 +1,5 @@
 {{- $u := .Destination -}}
+{{- if strings.HasPrefix $u "main:" }}{{ $u = printf "%s%s" site.Params.main (strings.TrimPrefix "main:" $u) }}{{ end -}}
 {{- if not (or (strings.Contains $u ":") (strings.HasPrefix $u "#") (strings.HasPrefix $u ".") (strings.HasPrefix $u "/")) -}}
   {{- $p := cond (strings.Contains $u "/") (site.GetPage (printf "/%s" $u)) (.Page.CurrentSection.GetPage $u) -}}
   {{- with $p }}{{ $u = .RelPermalink }}{{ else }}{{ errorf "Link inexistent %q în %s" $u $.Page.File.Path }}{{ end -}}
