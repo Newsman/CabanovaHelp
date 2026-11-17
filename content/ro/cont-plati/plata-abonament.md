@@ -1,5 +1,5 @@
 ---
-title: "Cum plătești abonamentul și ce metode de plată accepți"
+title: "Cum plătești abonamentul și ce metode de plată poți folosi"
 description: "Plata în avans pe 1, 2 sau 5 ani, cu card sau PayPal, fără reînnoire automată."
 weight: 1
 ---
